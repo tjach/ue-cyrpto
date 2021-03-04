@@ -1,0 +1,22 @@
+Co to funkcja hashujaca i po co sie ja stosuje?
+Pobranie gpg/tor i sprawdzenie hash-a
+Biblioteka hashlib: https://docs.python.org/3/library/hashlib.html
+    inicjalizacja
+    funkcja update
+    funkcja digest/hexdigest
+    algorithms_guaranteed/algorithms_available
+Kolizje
+https://crypto.stackexchange.com/questions/47809/why-havent-any-sha-256-collisions-been-found-yet
+Problemy z przechowywaniem haseł
+    sól
+HMAC
+
+Ćwiczenia
+
+1. Zaimplementuj hashowanie wszystkimi funkcjami zwracanymi przez algorithms_available wraz ze zwróceniem informacji o czasie hashowania dla tekstu z konsoli.
+2. Ściągnij duży plik (np. ubuntu) i sprawdź, czy hash się zgadza.
+3. Zaimplementuj funkcję, która hashuje dowolny blik binarny z dysku. Sprawdź ją przez hashowanie obrazu ubuntu z pkt 2.
+4. Zaprojektuj i zaimplementuj prosty własny sposób przechowywania haseł w bazie sqlite: użytkownik podaje hasło dwa razy, losujesz sól, hashujesz wszystko i zapisujesz hash oraz sól do bazy. Dodaj funkcję weryfikującą hasło.
+5. Przerób pkt 4. aby używał pbkdf2_hmac. Zrób z tego porządny projekt (testy, docstringi, itp.)
+6. Za pomocą pakietu timeit zbadaj szybkość generowania hashy dla wiadomości o różnych rozmiarach. Przedstaw to na wykresie za pomocą matplotlib czy plotly (zalecane).
+

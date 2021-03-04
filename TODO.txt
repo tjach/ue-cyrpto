@@ -1,0 +1,8 @@
+Git repo
+virtualenv
+requirements.txt
+src/test directories
+docstrings
+Testy
+Zmienne i stałe, a nie bzdetne wartości
+Logger
